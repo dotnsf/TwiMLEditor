@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>FBOAuth</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+	<servlet>
+		<servlet-name>Logoff</servlet-name>
+		<servlet-class>me.juge.fboauth.LogoffServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logoff</servlet-name>
+		<url-pattern>/logoff</url-pattern>
+	</servlet-mapping>
+
+  	<servlet>
+		<servlet-name>TwiMLSearch</servlet-name>
+		<servlet-class>me.juge.twimleditor.TwiMLSearchServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>TwiMLSearch</servlet-name>
+		<url-pattern>/twimlsearch</url-pattern>
+	</servlet-mapping>
+  	<servlet>
+		<servlet-name>ShowTwiML</servlet-name>
+		<servlet-class>me.juge.twimleditor.ShowTwiMLServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>ShowTwiML</servlet-name>
+		<url-pattern>/showtwiml</url-pattern>
+	</servlet-mapping>
+  	<servlet>
+		<servlet-name>UpdateTwiML</servlet-name>
+		<servlet-class>me.juge.twimleditor.UpdateTwiMLServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>UpdateTwiML</servlet-name>
+		<url-pattern>/updatetwiml</url-pattern>
+	</servlet-mapping>
+  	<servlet>
+		<servlet-name>CreateTwiML</servlet-name>
+		<servlet-class>me.juge.twimleditor.CreateTwiMLServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>CreateTwiML</servlet-name>
+		<url-pattern>/createtwiml</url-pattern>
+	</servlet-mapping>
+  	<servlet>
+		<servlet-name>DeleteTwiML</servlet-name>
+		<servlet-class>me.juge.twimleditor.DeleteTwiMLServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>DeleteTwiML</servlet-name>
+		<url-pattern>/deletetwiml</url-pattern>
+	</servlet-mapping>
+
+  <session-config>
+    <session-timeout>-1</session-timeout>
+  </session-config>
+
+</web-app>
